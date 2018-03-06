@@ -2,4 +2,18 @@
 
 a collection of red teaming related scripts developed for lazy RedTeamer like me :)
 
-## [1.CloudFront Domain Frontable Finder](https://github.com/yeyintminthuhtut/Lazy-RedTeamer-Scripts/blob/master/df_finder.sh)
+(Disclaimer: All Sample Output are from personal lab environment. No real engagement information are not listed ¯\_(ツ)_/¯ )
+
+## [CloudFront Domain Frontable Finder](df_finder.sh)
+
+## Pictures
+
+<p align="left">
+  <img src="df_finder_ss1.png">
+</p>
+<hr>
+
+<p align="left">
+  <img src="df_finder_ss2.png">
+</p>
+<hr>
