@@ -21,7 +21,7 @@ done
 echo ".........................................."
 domainlist=$2
 IFS=$'\n'
-echo "\nFinding High Reputation Frontable....\n"
+echo "Finding High Reputation Frontable...."
 for next in `cat $domainlist`
         do
                 aws=$(wget -q -O - -U test http://$next/t3st.txt --header "Host: $1")
