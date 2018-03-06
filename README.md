@@ -6,8 +6,9 @@ a collection of red teaming related scripts developed for lazy RedTeamer like me
 
 ## [CloudFront Domain Frontable Finder](df_finder.sh)
 
-## Pictures
+<i> Kudos to Vincent Yiu @vysecurity for his research https://www.mdsec.co.uk/2017/02/domain-fronting-via-cloudfront-alternate-domains/ and Cloudfront domain list, download here https://github.com/vysec/DomainFrontingLists <i>
 
+## Pictures
 <p align="left">
   <img src="df_finder_ss1.png">
 </p>
