@@ -18,3 +18,11 @@ a collection of red teaming related scripts developed for lazy RedTeamer like me
   <img src="df_finder_ss2.png">
 </p>
 <hr>
+
+## [Aggressor Auto Peristence for Low Priv](low_persis.cna)
+
+Features
+- Automatically create peristence for low privilege once initial beacon started.
+- Upload to public folder
+- Brab timestamp values from windows binary.
+
